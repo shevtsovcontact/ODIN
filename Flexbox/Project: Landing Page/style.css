@@ -1,17 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
-  width: 55%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
-.header, .hero {
+.first-section, .second-section,
+.third-section, .fourth-section, .footer {
+  margin-left: 40%;
+  transform: translateX(-40%);
+  padding: 0 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-section {
+  flex: 1;
+  gap: 48px;
   background-color: #1F2937;
 }
 
@@ -19,7 +36,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 192px;
 }
 
 .logo {
@@ -38,9 +54,8 @@ ul {
 .hero {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
   align-items: center;
-  gap: 48px;
-  padding: 96px 192px;
   color: #E5E7EB;
 }
 
@@ -60,6 +75,7 @@ ul {
   padding: 8px 32px;
   color: #E5E7EB;
   margin-top: 8px;
+  font-size: 16px;
 }
 
 .hero .image {
@@ -69,4 +85,93 @@ ul {
   background-color: grey;
   justify-content: center;
   align-items: center;
+}
+
+.second-section {
+  flex: 2;
+  gap: 48px;
+  align-items: center;
+}
+
+.second-section .title {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+}
+
+.cards {
+  display: flex;
+  gap: 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882F6;
+  border-radius: 12px;
+}
+
+.card .subtext {
+  text-align: center;
+}
+
+.third-section {
+  flex: 2;
+  background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 300;
+}
+
+.author {
+  align-self: flex-end;
+  padding-right: 196px;
+  font-size: 24px;
+  color: #1F2937;
+  font-weight: 900;
+}
+
+.fourth-section {
+  flex: 2;
+}
+
+.call {
+  background-color: #3882F6;
+  padding: 48px 100px;
+  color: #F9FAF8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+
+.call .title {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.call .btn {
+  border: 1px solid #F9FAF8;
+  border-radius: 6px;
+  padding: 8px 32px;
+}
+
+.footer {
+  flex: 1;
+  text-align: center;
+  background-color: #1F2937;
+  color: #E5E7EB;
 }
