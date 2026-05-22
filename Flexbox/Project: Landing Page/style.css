@@ -81,10 +81,7 @@ ul {
 .hero .image {
   width: 1000px;
   height: 200px;
-  display: flex;
-  background-color: grey;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
 }
 
 .second-section {
