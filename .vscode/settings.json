@@ -1,0 +1,4 @@
+{
+  "prettier.documentSelectors": [".js", ".html", ".css"],
+  "editor.formatOnSave": true
+}
